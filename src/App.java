@@ -11,7 +11,9 @@ public class App {
         player.additem("Pocao");
         player.additem("Escudo");
         player.mostraritens();
+        player.ataque();
         player2.additem("cajado");
+        player2.ataque();
         player2.additem("tunica");
         player2.mostraritens();
         System.out.println("==========================================================");

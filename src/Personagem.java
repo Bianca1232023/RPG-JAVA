@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Personagem implements Interface_inventario{
+public class Personagem implements Habilidade{
     private String nome;
     private String classe;
     private int atk;
@@ -102,13 +102,12 @@ public class Personagem implements Interface_inventario{
         this.inventario = inventario;
     }
 
-    @Override
+
     public Boolean removeritem(String item) {
         System.out.println(item + " foi removido(a) do inventario");
         return inventario.removeritem(item);
     }
 
-    @Override
     public void additem(String item) {
         inventario.additem(item);
         System.out.println(item + " foi adicionado(a) ao inventario");
@@ -126,5 +125,10 @@ public class Personagem implements Interface_inventario{
             }
         }
 }
+
+    @Override
+    public void ataque() {
+        System.out.println(nome + " esta atacando!!!");
+    }
 
 }
